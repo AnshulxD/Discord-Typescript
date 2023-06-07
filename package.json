@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/AnshulxD/Discord-Typescript/issues"
   },
-  "homepage": "https://github.com/AnshulxD/Discord-Typescript#readme"
+  "homepage": "https://github.com/AnshulxD/Discord-Typescript#readme",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^14.11.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0"
+  }
 }
