@@ -1,0 +1,24 @@
+{
+  "name": "discord-typescript",
+  "version": "1.0.0",
+  "description": "Learning and Building Discord Bot using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshulxD/Discord-Typescript.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "typescript"
+  ],
+  "author": "Anshoool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnshulxD/Discord-Typescript/issues"
+  },
+  "homepage": "https://github.com/AnshulxD/Discord-Typescript#readme"
+}
