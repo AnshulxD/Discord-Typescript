@@ -1,3 +1,5 @@
+const { CompressedPixelFormat } = require('three');
+
 function loadEvents(client) {
     const ascii = require('ascii-table');
     const fs = require('fs');
@@ -14,14 +16,21 @@ function loadEvents(client) {
                 if(event.once)
                 client.rest.once(event.name, (...args) =>
                 event.execute(...args, client)
-                    );
-                    else
+                );
+                else
                     client.rest.on(event.name, (...args) =>
                         event.execute(...args, client)
                         );
-            else
-                    
-            }
+            } else {
+                if(event.once)
+                    client.once(event.name, (...args) => event.execute(...args, client));
+                else client.on(event.name, (...args) => event.execute(...args, client));
+            }   
+            table.addRow(file, "loaded");
+            continue;
         }
     }
+    return console.log(table.toString(), "\n Loaded Events");
 }
+
+module.exports = {loadEvents};
