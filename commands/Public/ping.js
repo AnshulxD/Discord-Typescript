@@ -6,6 +6,6 @@ module.exports = {
 		.setDescription('Replies with Pong!')
 		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // only allow admin to run the command
 	execute(interaction) {
-		interaction.reply({content: 'Pong!', ephermal: true});
+		interaction.reply({content: 'Pong!', ephemeral: true});
 	},
 };
